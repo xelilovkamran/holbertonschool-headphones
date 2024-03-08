@@ -204,7 +204,6 @@ template {
   --section-tagline-font-family: var(--font-family-tagline);
   --section-tagline-font-size: var(--font-size-medium);
   --section-tagline-line-height: var(--line-height-base);
-  --section-body-padding: 2rem 0 4rem;
   --section-body-align: center;
   --section-footer-padding: 3rem 0 0;
   --section-footer-align: center;
@@ -359,9 +358,11 @@ a {
 
 .header {
   padding: var(--header-padding);
-  position: relative;
-  z-index: 3;
   background: transparent;
+  background-image: url(./assets/images/headphones_hero_1.jpg);
+  background-position: 40% center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .header .menu-icon {
@@ -450,10 +451,6 @@ a {
   top: 0;
 }
 
-.header:has(.menu-btn:checked) + #main .section-hero::before {
-  height: 97.4rem;
-}
-
 @media screen and (max-width: 600px) {
   .header-container {
     padding: 0 0.7rem;
@@ -507,7 +504,6 @@ a {
 }
 
 .section-body {
-  padding: var(--section-body-padding);
   text-align: var(--section-body-align);
 }
 
@@ -520,24 +516,10 @@ a {
       ============================= */
 
 .section-hero {
-  padding: 20.2rem 6.6rem 0;
+  padding: 31.2rem 6.6rem 11.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.section-hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 80.4rem;
-  background-image: url(./assets/images/headphones_hero_1.jpg);
-  background-position: 40% center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  z-index: -1;
 }
 
 .section-hero .hero-title {
@@ -558,7 +540,7 @@ a {
 
 @media screen and (max-width: 480px) {
   .section-hero {
-    padding: 15.6rem 1rem 0;
+    padding: 15.6rem 1rem 10rem;
   }
   .section-hero .hero-subtitle {
     margin-bottom: 2rem;
