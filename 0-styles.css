@@ -231,6 +231,7 @@ template {
   --button-text-decoration: none;
   --button-font-size: var(--font-size-small);
   --button-hover-opacity: 0.9;
+  --button-line-height: 1.8rem;
 
   /** MOTION **/
   --transition-duration: 0.3s;
@@ -274,6 +275,7 @@ a {
   text-decoration: var(--button-text-decoration);
   border: var(--button-border);
   font-family: var(--font-family-base);
+  line-height: var(--button-line-height);
   cursor: pointer;
   transition: opacity var(--transition-duration) ease-in-out;
 }
