@@ -179,7 +179,7 @@ template {
 
   --font-family-base: "SourceSansPro-Bold", sans-serif;
   --font-family-title: "SourceSansPro-Semibold", sans-serif;
-  --font-family-text: "SourceSansPro-Regular", sans-serif;
+  --font-family-tagline: "SourceSansPro-Regular", sans-serif;
 
   --font-size-small: 1.4rem;
   --font-size-medium: 1.6rem;
@@ -201,8 +201,9 @@ template {
   --section-title-margin: 0;
   --section-title-color: var(--color-white);
   --section-tagline-color: var(--color-white);
-  --section-tagline-font-family: var(--font-family-base);
+  --section-tagline-font-family: var(--font-family-tagline);
   --section-tagline-font-size: var(--font-size-medium);
+  --section-tagline-line-height: var(--line-height-base);
   --section-body-padding: 2rem 0 4rem;
   --section-body-align: center;
   --section-footer-padding: 3rem 0 0;
@@ -262,7 +263,7 @@ h6 {
 }
 
 P {
-  font-family: var(--font-family-text);
+  font-family: var(--font-family-base);
 }
 
 a {
@@ -502,6 +503,7 @@ a {
   color: var(--section-tagline-color);
   font-family: var(--section-tagline-font-family);
   font-size: var(--section-tagline-font-size);
+  line-height: var(--section-tagline-line-height);
 }
 
 .section-body {
@@ -542,14 +544,14 @@ a {
   font-family: var(--font-family-base);
 }
 
-.section-hero .hero-tagline {
+.section-hero .hero-subtitle {
+  color: var(--color-white);
+  font-size: var(--font-size-medium);
+  line-height: 2rem;
   margin-bottom: 4rem;
 }
 
-.section-hero .hero-text {
-  font-size: var(--font-size-medium);
-  line-height: var(--line-height-base);
-  color: var(--color-white);
+.section-hero .hero-tagline {
   margin-top: 6.5rem;
   max-width: 637px;
 }
@@ -558,7 +560,7 @@ a {
   .section-hero {
     padding: 15.6rem 1rem 0;
   }
-  .section-hero .hero-tagline {
+  .section-hero .hero-subtitle {
     margin-bottom: 2rem;
   }
 }
