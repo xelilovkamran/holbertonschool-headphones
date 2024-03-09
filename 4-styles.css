@@ -765,9 +765,10 @@ ul.row {
   width: 100%;
 }
 
-.contact-section input {
+.contact-section input,
+.contact-section textarea {
   width: 100%;
-  padding: 1.6rem 1.6rem 1.6rem 0;
+  padding: 1.6rem 0.8rem 1.6rem 0.8rem;
   border: none;
   outline: none;
   font-size: var(--font-size-small);
@@ -778,6 +779,14 @@ ul.row {
 }
 
 .contact-section input::placeholder {
+  color: var(--color-black);
+}
+
+.contact-section textarea {
+  resize: none;
+}
+
+.contact-section textarea::placeholder {
   color: var(--color-black);
 }
 
