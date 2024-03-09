@@ -603,6 +603,7 @@ ul.row {
 .whatwedo-section .row {
   margin-top: 5.7rem;
   column-gap: 5.8rem;
+  align-items: baseline;
 }
 
 .whatwedo-section .col-title {
